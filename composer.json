@@ -1,11 +1,17 @@
 {
     "name": "amixsi/helper",
+    "type": "library",
+    "description": "Helpers",
+    "license": "MIT",
     "authors": [
         {
             "name": "Edison",
-            "email": "dinho.abreu@gmail.com"
+            "email": "edison@amixsi.com.br"
         }
     ],
+    "require": {
+        "php": ">=5.4.0"
+    },
     "autoload": {
         "psr-4": {
             "Amixsi\\": "src/Amixsi/"
