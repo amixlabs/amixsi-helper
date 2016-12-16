@@ -27,7 +27,7 @@ class DateRange
         $daterange = new \DatePeriod($begin, $interval, $end);
         $range = array();
         foreach ($daterange as $date) {
-            if (!in_array($date->format('Y-m-d'), $excl)) {
+            if (!in_array($date->format('Y-m-d'), $excl) && ($date->getTimestamp() <= $this->end->getTimestamp())) {
                 $range[] = $date;
             }
         }
